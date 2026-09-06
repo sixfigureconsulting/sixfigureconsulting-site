@@ -170,6 +170,11 @@ html, body {
 .cta-inner { max-width: 560px; margin: 0 auto; }
 .cta p { color: var(--muted); margin-bottom: 32px; }
 
+.newsletter { text-align: center; }
+.newsletter-inner { max-width: 480px; margin: 0 auto; }
+.newsletter p { color: var(--muted); margin-bottom: 28px; }
+.newsletter-form .hs-form-frame { color-scheme: dark; }
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 28px 0;
