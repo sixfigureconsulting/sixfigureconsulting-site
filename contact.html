@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Six Figure Consulting</title>
+<meta name="description" content="Get in touch with Six Figure Consulting about UAE business setup, visas, real estate investment, tax, or AI outreach and content consulting." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html#top">Six Figure Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="partner-with-us.html">Partner With Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta desktop-only" href="contact.html">Book a Call</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Let's talk</h1>
+        <p class="lead">
+          Tell us what you're trying to do — set up in the UAE, secure a visa, invest in property,
+          get compliant on tax, or grow with AI outreach or content — and we'll point you to the
+          right next step.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What to include</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What you need</h3>
+            <p>Which service you're interested in — UAE setup, visas, real estate, tax, or AI outreach/content.</p>
+          </div>
+          <div class="card">
+            <h3>Your situation</h3>
+            <p>A line or two on your business or investment goals, and where you're based today.</p>
+          </div>
+          <div class="card">
+            <h3>Timeline</h3>
+            <p>Any deadline or timeframe you're working against, so we can prioritize accordingly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2>Ready when you are</h2>
+        <p>Email us directly and we'll get back to you to schedule a call.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:ankit@sixfigureconsulting.co">Email ankit@sixfigureconsulting.co</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Six Figure Consulting</span>
+      <a href="mailto:ankit@sixfigureconsulting.co">ankit@sixfigureconsulting.co</a>
+    </div>
+    <p class="footer-disclaimer">Six Figure Consulting connects clients with licensed third-party partners for UAE business setup, visa, real estate, and tax services. We do not provide legal, immigration, financial, or tax advice directly.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
