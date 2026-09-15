@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meet the Team — Six Figure Consulting</title>
+<meta name="description" content="Meet the founders and team behind Six Figure Consulting — the people you actually work with, from application to results." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html#top">Six Figure Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="team.html">Team</a>
+        <a href="https://blog.sixfigureconsulting.co/">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary nav-cta desktop-only" href="contact.html">Apply Now</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Founder-Led, Not Outsourced</p>
+        <h1>Meet the team</h1>
+        <p class="lead">
+          No account-manager hand-offs and no call center abroad. Here's who you're actually
+          working with — from your first application to the day the work is done.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>The team</h2>
+        <div class="grid">
+          <div class="card team-card">
+            <div class="team-avatar"><img src="assets/team/ankit-modi.webp" alt="Ankit Modi" /></div>
+            <h3>Ankit Modi</h3>
+            <p class="team-title">Founder</p>
+            <p>Leads Six Figure Consulting's strategy and partner network, and stays hands-on with every engagement from application to close.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-avatar"><img src="assets/team/elaiza-reyes.webp" alt="Elaiza Reyes" /></div>
+            <h3>Elaiza Reyes</h3>
+            <p class="team-title">Operations Lead</p>
+            <p>Keeps every engagement moving — coordinating partners, filings, and follow-ups so nothing falls through the cracks.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-avatar"><img src="assets/team/melody-orillosa.webp" alt="Melody Orillosa" /></div>
+            <h3>Melody Orillosa</h3>
+            <p class="team-title">Program Specialist</p>
+            <p>Works directly with clients to manage applications and keep programs on track from kickoff to completion.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-avatar">AT</div>
+            <h3>Angela Tenorio</h3>
+            <p class="team-title">Program Specialist</p>
+            <p>Works directly with clients to manage applications and keep programs on track from kickoff to completion.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-avatar"><img src="assets/team/alyzza-salvador.webp" alt="Alyzza Kate Salvador" /></div>
+            <h3>Alyzza Kate Salvador</h3>
+            <p class="team-title">Program Specialist</p>
+            <p>Works directly with clients to manage applications and keep programs on track from kickoff to completion.</p>
+          </div>
+          <div class="card team-card">
+            <div class="team-avatar"><img src="assets/team/sirin-ai.webp" alt="Sirin AI" /></div>
+            <h3>Sirin AI</h3>
+            <p class="team-title">AI Program Specialist</p>
+            <p>Six Figure Consulting's AI teammate — handling research, scheduling, and follow-up support around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Why it matters</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>One point of contact</h3>
+            <p>You deal directly with the team on this page — we coordinate every partner, filing, and follow-up behind the scenes.</p>
+          </div>
+          <div class="card">
+            <h3>Direct access</h3>
+            <p>No tiers, no ticket queues. You reach the people who actually run your engagement.</p>
+          </div>
+          <div class="card">
+            <h3>Accountable by name</h3>
+            <p>Every application is reviewed and every result is owned by someone on this team, not a faceless department.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2>Ready to work with us?</h2>
+        <p>Apply and, if it's a fit, one of us will reach out directly.</p>
+        <a class="btn btn-primary btn-lg" href="contact.html">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Six Figure Consulting</span>
+      <a href="mailto:ankit@sixfigureconsulting.co">ankit@sixfigureconsulting.co</a>
+    </div>
+    <p class="footer-disclaimer">Six Figure Consulting connects clients with licensed third-party partners for UAE business setup, visa, real estate, and tax services, and with lending partners for USA business funding. We do not provide legal, immigration, financial, tax, or lending advice directly, and we are not a lender.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
