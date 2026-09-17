@@ -321,6 +321,36 @@ a.card:hover .card-link { gap: 8px; }
 }
 .card-icon svg { width: 22px; height: 22px; }
 
+/* Partner cards (AI Partners page) */
+.partner-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--accent-gradient);
+  color: var(--accent-fg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 18px;
+  flex: none;
+  box-shadow: var(--shadow-sm);
+}
+.partner-card .card-link { margin-top: auto; }
+.disclosure-box {
+  background: var(--accent-soft-bg);
+  border: 1px solid var(--accent-soft-border);
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  color: var(--fg);
+  font-size: 0.95rem;
+  max-width: 760px;
+}
+.disclosure-box strong { color: var(--accent-2); }
+
 /* Team */
 .team-avatar {
   width: 160px;
