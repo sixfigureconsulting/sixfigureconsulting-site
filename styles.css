@@ -350,6 +350,9 @@ a.card:hover .card-link { gap: 8px; }
   max-width: 760px;
 }
 .disclosure-box strong { color: var(--accent-2); }
+.disclosure-box a { color: var(--accent-2); font-weight: 600; }
+.grid > .disclosure-box, .disclosure-box + .grid { margin-top: 8px; }
+.section-lead + .disclosure-box { margin: 24px 0 32px; }
 
 /* Team */
 .team-avatar {
