@@ -125,7 +125,7 @@ a { color: inherit; }
   position: absolute;
   top: 100%;
   left: -16px;
-  margin-top: 14px;
+  margin-top: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
