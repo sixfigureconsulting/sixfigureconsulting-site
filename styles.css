@@ -131,9 +131,9 @@ a { color: inherit; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   padding: 20px;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
-  gap: 24px;
-  min-width: 680px;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 20px;
+  min-width: 820px;
   z-index: 20;
 }
 .nav-dropdown.is-open .nav-dropdown-menu,
