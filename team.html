@@ -24,7 +24,32 @@
     <div class="container nav-inner">
       <a class="brand" href="index.html#top">Six Figure Consulting</a>
       <nav class="nav-links">
-        <a href="index.html#services">Services</a>
+        <div class="nav-dropdown">
+          <a href="index.html#services">Services</a>
+          <button class="nav-dropdown-toggle" aria-expanded="false" aria-label="Toggle services menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-col">
+              <p class="nav-dropdown-heading">Make More Money</p>
+              <a href="services/ai-outreach-consulting.html">AI &amp; Outreach Consulting</a>
+            </div>
+            <div class="nav-dropdown-col">
+              <p class="nav-dropdown-heading">Protect/Invest Money</p>
+              <a href="services/business-setup.html">UAE Business Setup</a>
+              <a href="services/tax-corporate.html">Tax &amp; Corporate Compliance</a>
+              <a href="services/real-estate-investment.html">Real Estate Investment</a>
+            </div>
+            <div class="nav-dropdown-col">
+              <p class="nav-dropdown-heading">Raise Funds</p>
+              <a href="services/usa-business-funding.html">USA Business Funding</a>
+              <a href="services/investor-outreach.html">Investor Outreach</a>
+            </div>
+            <div class="nav-dropdown-col">
+              <p class="nav-dropdown-heading">Save More Time</p>
+              <a href="services/talent-placement.html">Appointment Setter, Closer &amp; VA Placement</a>
+              <a href="services/ai-content-consulting.html">AI &amp; Content Consulting</a>
+            </div>
+          </div>
+        </div>
         <a href="team.html">Team</a>
         <a href="ai-partners.html">Our AI Stack</a>
         <a href="https://blog.sixfigureconsulting.co/">Blog</a>
@@ -175,6 +200,22 @@
     document.getElementById('year').textContent = new Date().getFullYear();
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav').classList.toggle('nav-open');
+    });
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        var dropdown = toggle.closest('.nav-dropdown');
+        var isOpen = dropdown.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    });
+    document.addEventListener('click', function (e) {
+      document.querySelectorAll('.nav-dropdown.is-open').forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('is-open');
+          dropdown.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+        }
+      });
     });
   </script>
 </body>
