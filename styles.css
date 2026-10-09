@@ -685,37 +685,6 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
   line-height: 1.6;
 }
 
-/* WhatsApp floating button */
-.whatsapp-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  height: 54px;
-  padding: 0 22px 0 16px;
-  border-radius: var(--radius);
-  background: var(--black);
-  color: var(--white);
-  border-bottom: 3px solid var(--yellow);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: background 0.18s ease, color 0.18s ease;
-}
-.whatsapp-float svg { width: 24px; height: 24px; flex: none; color: #25D366; }
-.whatsapp-float:hover { background: var(--yellow); color: var(--black); }
-.whatsapp-float:hover svg { color: var(--black); }
-@media (max-width: 560px) {
-  .whatsapp-float span { display: none; }
-  .whatsapp-float { padding: 0; width: 54px; justify-content: center; }
-}
-
 .team-connect {
   color: var(--black);
   font-weight: 600;
