@@ -732,6 +732,7 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 .compare-table td.is-muted { color: var(--grey); }
 .compare-table td.is-accent { color: var(--black); font-weight: 600; background: #FFF4D6; }
 .compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table td a { color: var(--black); font-weight: 600; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 
 /* Pricing */
 .price-card { position: relative; }
