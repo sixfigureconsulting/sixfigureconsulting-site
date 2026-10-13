@@ -106,7 +106,7 @@
         <a href="../contact.html">Contact</a>
         <a href="https://chat.whatsapp.com/LoLdTT25UZd3nzIfLV8WkU" target="_blank" rel="noopener">WhatsApp Community</a>
       </nav>
-      <a class="btn btn-primary nav-cta desktop-only" href="../contact.html">Apply Now</a>
+      <a class="btn btn-primary nav-cta desktop-only" href="../book-a-call.html">Book a 15 Mins Consultation</a>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </header>
@@ -125,7 +125,9 @@
           autopilot.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="../contact.html">Apply Now</a>
+          <a class="btn btn-primary" href="../book-a-call.html">Book a 15 Mins Consultation</a>
+        
+          <button type="button" class="btn btn-ghost" onclick="talkToOurAI(); return false;">Talk to our AI</button>
         </div>
       </div>
     </section>
@@ -180,7 +182,10 @@
       <div class="container cta-inner">
         <h2>Ready to put your raise in front of the right investors?</h2>
         <p>Tell us about your round and we'll show you what an automated investor outreach system looks like.</p>
-        <a class="btn btn-primary btn-lg" href="../contact.html">Apply Now</a>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="../book-a-call.html">Book a 15 Mins Consultation</a>
+          <button type="button" class="btn btn-ghost" onclick="talkToOurAI(); return false;">Talk to our AI</button>
+        </div>
       </div>
     </section>
   </main>
@@ -201,7 +206,7 @@
           <a href="https://blog.sixfigureconsulting.co/">Blog</a>
           <a href="../contact.html">Contact</a>
           <a href="https://chat.whatsapp.com/LoLdTT25UZd3nzIfLV8WkU" target="_blank" rel="noopener">WhatsApp Community</a>
-          <a href="../contact.html">Apply Now</a>
+          <a href="../book-a-call.html">Book a 15 Mins Consultation</a>
         </nav>
       </div>
       <div class="footer-col">
@@ -257,6 +262,19 @@
         }
       });
     });
+  </script>
+  <script>
+    function talkToOurAI() {
+      var widget = document.querySelector('vapi-widget');
+      if (!widget) return;
+      try {
+        var root = widget.shadowRoot;
+        var btn = root && root.querySelector('button');
+        if (btn) { btn.click(); return; }
+      } catch (e) { /* fall through to attention pulse */ }
+      widget.classList.add('is-pulsing');
+      setTimeout(function () { widget.classList.remove('is-pulsing'); }, 3200);
+    }
   </script>
 </body>
 </html>

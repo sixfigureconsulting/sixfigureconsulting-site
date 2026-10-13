@@ -540,6 +540,17 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 .cta p { color: var(--on-dark-muted); margin: 0 auto 34px; max-width: 54ch; }
 .cta .btn-primary:hover { background: var(--white); color: var(--black); border-color: var(--white); }
 .cta .btn-ghost { color: var(--white); border-color: var(--grey); }
+.cta-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+/* Cal.com booking embed */
+.cal-embed-wrap { width: 100%; min-height: 700px; }
+
+/* Draws attention to the floating voice widget when "Talk to our AI" is clicked */
+@keyframes vapi-attention-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(253, 184, 19, 0.65); }
+  50% { box-shadow: 0 0 0 16px rgba(253, 184, 19, 0); }
+}
+vapi-widget.is-pulsing { animation: vapi-attention-pulse 1s ease-out 3; border-radius: 999px; }
 
 /* Application form section */
 .newsletter { text-align: center; }
