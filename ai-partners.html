@@ -579,7 +579,7 @@
         <p>We build and run GTM systems on top of these tools every day. Apply and we&#8217;ll tell you honestly what you actually need.</p>
         <div class="cta-actions">
           <a class="btn btn-primary btn-lg" href="book-a-call.html">Book a 15 Mins Consultation</a>
-          <button type="button" class="btn btn-ghost js-talk-to-ai" onclick="talkToOurAI()">Talk to our AI</button>
+          <a class="btn btn-ghost" href="contact.html">Apply to Work With Us</a>
         </div>
       </div>
     </section>
@@ -657,71 +657,6 @@
         }
       });
     });
-  </script>
-  <script>
-    // Used until (or unless) the Vapi SDK module below finishes loading,
-    // so a slow or blocked CDN import can never make this button a silent no-op.
-    window.talkToOurAI = function () {
-      var widget = document.querySelector('vapi-widget');
-      if (widget) {
-        try {
-          var btn = widget.shadowRoot && widget.shadowRoot.querySelector('button');
-          if (btn) { btn.click(); return; }
-        } catch (e) { /* fall through to redirect */ }
-      }
-      var bookingPath = window.location.pathname.indexOf('/services/') !== -1 ? '../book-a-call.html' : 'book-a-call.html';
-      window.location.href = bookingPath;
-    };
-  </script>
-  <script type="module">
-    import Vapi from "https://cdn.jsdelivr.net/npm/@vapi-ai/web@2.7.1/+esm";
-
-    var vapi = null;
-    var inCall = false;
-    var connecting = false;
-
-    function setTalkButtons(label, disabled) {
-      document.querySelectorAll('.js-talk-to-ai').forEach(function (btn) {
-        btn.textContent = label;
-        btn.disabled = !!disabled;
-      });
-    }
-
-    function resetAfterError() {
-      connecting = false;
-      inCall = false;
-      setTalkButtons('Try again', false);
-      setTimeout(function () { setTalkButtons('Talk to our AI', false); }, 3000);
-    }
-
-    window.talkToOurAI = function () {
-      if (connecting) return;
-      if (inCall) {
-        if (vapi) vapi.stop();
-        return;
-      }
-      connecting = true;
-      setTalkButtons('Connecting…', true);
-      if (!vapi) {
-        vapi = new Vapi('0d2d0e65-ad88-4354-90a5-ea3e85ebfa25');
-        vapi.on('call-start', function () {
-          connecting = false;
-          inCall = true;
-          setTalkButtons('In call, tap to end', false);
-        });
-        vapi.on('call-end', function () {
-          connecting = false;
-          inCall = false;
-          setTalkButtons('Talk to our AI', false);
-        });
-        vapi.on('error', resetAfterError);
-      }
-      try {
-        vapi.start('ec31a2bc-167b-48f2-830e-dd62fda5a7c0');
-      } catch (e) {
-        resetAfterError();
-      }
-    };
   </script>
 </body>
 </html>

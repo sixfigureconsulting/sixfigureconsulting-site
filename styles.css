@@ -545,9 +545,6 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 /* Cal.com booking embed */
 .cal-embed-wrap { width: 100%; min-height: 700px; }
 
-/* "Talk to our AI" button, while connecting or on an active call */
-.js-talk-to-ai:disabled { opacity: 0.6; cursor: wait; }
-
 /* Application form section */
 .newsletter { text-align: center; }
 .newsletter-inner { max-width: 560px; margin: 0 auto; }
