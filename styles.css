@@ -540,6 +540,10 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 .cta p { color: var(--on-dark-muted); margin: 0 auto 34px; max-width: 54ch; }
 .cta .btn-primary:hover { background: var(--white); color: var(--black); border-color: var(--white); }
 .cta .btn-ghost { color: var(--white); border-color: var(--grey); }
+.cta-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+/* Cal.com booking embed */
+.cal-embed-wrap { width: 100%; min-height: 700px; }
 
 /* Application form section */
 .newsletter { text-align: center; }
