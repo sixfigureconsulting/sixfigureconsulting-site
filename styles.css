@@ -757,3 +757,33 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 .price-compare { margin-top: 48px; }
 .price-compare h3 { text-align: center; margin-bottom: 24px; font-size: 1.8rem; }
 .price-compare .section-lead { margin: 24px auto 0; text-align: center; }
+
+/* Blog */
+.blog-card-meta {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 12px;
+}
+.blog-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--grey);
+  border: 1px dashed var(--line);
+}
+.blog-empty p { margin: 0; }
+.blog-post-meta {
+  color: var(--on-dark-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+}
+.blog-post-body { max-width: 720px; margin: 0 auto; }
+.blog-post-body p { margin: 0 0 22px; line-height: 1.7; color: var(--black); }
+.blog-post-body h2 { font-size: 1.9rem; margin: 44px 0 18px; }
+.blog-post-body h3 { font-size: 1.4rem; margin: 32px 0 14px; }
+.blog-post-body ul, .blog-post-body ol { margin: 0 0 22px; padding-left: 22px; line-height: 1.7; }
+.blog-post-body li { margin-bottom: 8px; }
+.blog-post-body a { color: var(--black); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; }
