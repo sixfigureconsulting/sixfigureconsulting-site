@@ -787,3 +787,6 @@ a.card:hover .card-link, .card-link:hover { gap: 10px; }
 .blog-post-body ul, .blog-post-body ol { margin: 0 0 22px; padding-left: 22px; line-height: 1.7; }
 .blog-post-body li { margin-bottom: 8px; }
 .blog-post-body a { color: var(--black); text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; }
+.blog-post-figure { margin: 0 0 32px; }
+.blog-post-figure img { width: 100%; height: auto; display: block; border-top: 5px solid var(--yellow); }
+.blog-post-body .faq-list { margin: 0 0 28px; }
