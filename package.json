@@ -1,0 +1,18 @@
+{
+  "name": "sixfigureconsulting-site",
+  "version": "1.0.0",
+  "description": "Six Figure Consulting website",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "esbuild analytics.js --bundle --format=iife --outfile=dist/analytics.min.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
