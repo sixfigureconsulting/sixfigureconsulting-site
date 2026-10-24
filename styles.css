@@ -262,6 +262,7 @@ a { color: inherit; }
 }
 .hero .lead { color: var(--on-dark-muted); }
 .hero .lead strong { color: var(--yellow); }
+.hero h1 strong { color: var(--yellow); font-weight: inherit; text-decoration: underline; text-decoration-color: var(--yellow); text-underline-offset: 6px; text-decoration-thickness: 3px; }
 .hero .btn-ghost { color: var(--white); border-color: var(--grey); }
 .hero .btn-ghost:hover { border-color: var(--yellow); background: transparent; color: var(--yellow); }
 .hero .btn-primary:hover { background: var(--white); color: var(--black); border-color: var(--white); }
